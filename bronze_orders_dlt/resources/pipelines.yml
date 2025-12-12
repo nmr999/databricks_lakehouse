@@ -1,0 +1,11 @@
+resources:
+  pipelines:
+    bronze_orders_pipeline:
+      name: bronze_orders_pipeline
+      catalog: bronze
+      target: default
+      development: true
+      channel: CURRENT
+      libraries:
+        - file:
+            path: ../src/bronze_orders_dlt.py

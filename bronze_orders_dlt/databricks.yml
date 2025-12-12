@@ -1,0 +1,9 @@
+bundle:
+  name: bronze_orders_dlt
+
+workspace:
+  host: https://dbc-56a98eac-1b45.cloud.databricks.com
+
+targets:
+  dev:
+    default: true

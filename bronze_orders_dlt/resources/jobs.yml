@@ -1,0 +1,8 @@
+resources:
+  jobs:
+    run_bronze_orders_pipeline:
+      name: run_bronze_orders_pipeline
+      tasks:
+        - task_key: run_dlt
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.bronze_orders_pipeline.id}
