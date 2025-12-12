@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: silver_orders
+    description: "Incremental Silver orders from Bronze with non-null enforcement and deduplication by id."
+    columns:
+      - name: id
+        description: "Unique identifier for each order record."
+        tests:
+          - not_null
+          - unique
+
+      - name: category
+        description: "Order category."
+        tests:
+          - not_null
+
+      - name: amount
+        description: "Order amount/value."
+        tests:
+          - not_null
+
+      - name: ingestion_date
+        description: "Original ingestion timestamp from source/bronze."
+
+      - name: silver_ingestion_date
+        description: "Timestamp when the record was written into the Silver layer."

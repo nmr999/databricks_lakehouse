@@ -1,0 +1,6 @@
+sources:
+  - name: silver
+    database: silver
+    schema: default
+    tables:
+      - name: silver_orders
