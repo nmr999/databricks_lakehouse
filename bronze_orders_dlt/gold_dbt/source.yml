@@ -1,6 +1,0 @@
-sources:
-  - name: gold
-    database: gold
-    schema: default
-    tables:
-      - name: gold_orders_summary

@@ -1,6 +1,8 @@
+version: 2
+
 sources:
-  - name: silver
-    database: silver
+  - name: bronze #Catalog Source
+    database: bronze
     schema: default
     tables:
-      - name: silver_orders
+      - name: orders
