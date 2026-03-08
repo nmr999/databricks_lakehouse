@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: gold_orders_summary
-    description: "Incremental Gold layer aggregating KPIs from Silver orders data"
+    description: "Incremental Gold layer aggregating KPIs from Silver orders data."
     columns:
       - name: category
         description: "Category used for aggregation"
